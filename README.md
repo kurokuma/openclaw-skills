@@ -19,3 +19,5 @@ set `~/.openclaw/api_config.json`
     }
 }
 ```
+
+put `~/.openclaw/workspace/skills`
