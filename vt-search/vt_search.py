@@ -84,9 +84,10 @@ def main() -> int:
         print("usage: vt_lookup.py <ioc>", file=sys.stderr)
         return 2
 
-    api_key = load_config()
-    if not api_key:
-        print("error: VT_API_KEY is not set", file=sys.stderr)
+    try:
+        api_key = load_config()
+    except Exception:
+        print("error: failed to load VT API key", file=sys.stderr)
         return 2
 
     ioc_raw = sys.argv[1]
