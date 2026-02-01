@@ -15,6 +15,12 @@ set `~/.openclaw/api_config.json`
         },
         "censys-search": {
             "pat": ""
+        },
+        "urlscan-search": {
+            "api_key": ""
+        },
+        "securitytrails-search": {
+            "api_key": ""
         }
     }
 }
